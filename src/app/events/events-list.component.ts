@@ -3,11 +3,10 @@ import { Component } from "@angular/core";
 @Component({
   selector: "events-list",
   template: `
-    <div>
+    <div class="container">
       <h1>Upcoming Angular Events</h1>
       <hr />
-      <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
-      <button class="btn btn-primary" (click)="thumbnail.logFoo()">Log</button>
+      <event-thumbnail [event]="event1"></event-thumbnail>
     </div>
   `
 })
