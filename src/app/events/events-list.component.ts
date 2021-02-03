@@ -5,8 +5,10 @@ import { Component } from "@angular/core";
   template: `
     <div>
       <h1>Upcoming Angular Events</h1>
-      <hr/>
-      <event-thumnnail [event]="event1"></event-thumbnail>
+      <hr />
+      <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+      <button class="btn btn-primary" (click)="thumbnail.logFoo()">Log</button>
+    </div>
   `
 })
 export class EventsListComponent {
@@ -18,7 +20,9 @@ export class EventsListComponent {
     price: 599.99,
     imageUrl: "/assets/images/angularconnect-shield.png",
     location: {
-      address: "1057 DT"
+      address: "1057 DT",
+      city: "London",
+      country: "UK"
     }
   };
 }
