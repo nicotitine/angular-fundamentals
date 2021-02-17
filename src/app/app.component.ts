@@ -3,6 +3,7 @@ import { Component, VERSION } from "@angular/core";
 @Component({
   selector: "my-app",
   template: `
+    <nav-bar></nav-bar>
     <events-list></events-list>
   `
 })
