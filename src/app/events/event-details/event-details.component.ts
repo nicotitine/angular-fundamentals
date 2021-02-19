@@ -18,6 +18,9 @@ import { EventService } from "../shared/event.service";
   ]
 })
 export class EventDetailsComponent {
+  event: any;
   constructor(private eventService: EventService) {}
-  ngOnInit() {}
+  ngOnInit() {
+    this.event = this.eventService.getEvent(1);
+  }
 }

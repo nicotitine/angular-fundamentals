@@ -24,5 +24,18 @@ const EVENTS = [
       city: "London",
       country: "UK"
     }
+  },
+  {
+    id: 2,
+    name: "Angular Test",
+    date: "9/26/2032",
+    time: "9.00 am",
+    price: 499.99,
+    imageUrl: "/assets/images/angularconnect-shield.png",
+    location: {
+      address: "1057 DT",
+      city: "London",
+      country: "UK"
+    }
   }
 ];
